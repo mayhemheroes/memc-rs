@@ -1,0 +1,7 @@
+project: memc-rs
+target: fuzz-binary-decoder
+
+cmds:
+  - cmd: /fuzz_binary_decoder
+  - cmd: /fuzz_binary_decoder_no_inst @@
+    libfuzzer: false
